@@ -23,9 +23,9 @@
     <div class="product-detail-wrap mb-30">
         <div class="row">
             <div class="col-lg-6 col-md-12 col-sm-12">
-            <div class="pd-20 card-box height-100-p text-center" >
+                <div class="pd-20 card-box height-100-p text-center">
                     <img height="300" @if($barang->gambar) src="{{ asset('storage/'.$barang->gambar) }}" @endif />
-            </div>
+                </div>
             </div>
             <div class="col-lg-6 col-md-12 col-sm-12">
                 <div class="product-detail-desc pd-20 card-box height-100-p">
@@ -52,12 +52,6 @@
                             <label for="jumlah_barang" class="col-sm-10 col-md-4 col-form-label text-white">Jumlah</label>
                             <div class="col-md-7 col-sm-12">
                                 <input class="form-control" type="text" name="jumlah_barang" id="jumlah_barang" value="{{ $barang->jumlah_barang }}" aria-describedby="jumlah_barang" placeholder="Disabled input" disabled="">
-                            </div>
-                        </div>
-                        <div class="form-group row" style="padding-left: 40px">
-                            <label for="id_supplier" class="col-sm-10 col-md-4 col-form-label text-white">Supplier</label>
-                            <div class="col-md-7 col-sm-12">
-                                <input class="form-control" type="text" name="id_supplier" id="id_supplier" value="{{ $barang->supplier->nama }}" aria-describedby="id_supplier" placeholder="Disabled input" disabled="">
                             </div>
                         </div>
                     </form>
